@@ -1,3 +1,4 @@
+import 'package:flutter_getx/app/modules/biodata/views/output_view.dart';
 import 'package:get/get.dart';
 
 import '../modules/biodata/bindings/biodata_binding.dart';
@@ -28,6 +29,11 @@ class AppPages {
     GetPage(
       name: _Paths.BIODATA,
       page: () => const BiodataView(),
+      binding: BiodataBinding(),
+    ),
+    GetPage(
+      name: _Paths.OUTPUT,
+      page: () => OutputView(),
       binding: BiodataBinding(),
     ),
   ];
